@@ -50,7 +50,6 @@
          
         image.style.display = "none"; // 先隱藏圖片
         spinner.style.display = "block"; // 顯示 spinner
-        image.src = "圖片/" + selectedValue + ".jpg";
         fetch('https://api.unsplash.com/photos/random?query=' + selectedValue + '&client_id=LrJ8c6NQgnqxoUw0JNWJy8eeZxGoRmYWczoNwGldLl4&auto=format')
         .then(response => response.json())
         .then(data => {
